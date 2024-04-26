@@ -2,7 +2,6 @@ import '../App.css'
 import {FormData} from "./typed"
 import {useEffect, useState} from "react";
 import {useRef} from 'react';
-import {jsPDF} from 'jspdf';
 
 type ListProps = {
     data: FormData
@@ -57,26 +56,26 @@ function List({data}: ListProps) {
 
     const divRef = useRef(null);
 
-    const downloadContentAsPDF = () => {
-        /*const content = divRef.current;*/
+/*    const downloadContentAsPDF = () => {
+        /!*const content = divRef.current;*!/
         const pdf = new jsPDF();
 
         // Füge Titel hinzu
         pdf.setFontSize(16);
         pdf.text('Packliste', 10, 10);
 
-       /* // Füge den Inhalt aus dem Div hinzu
+       /!* // Füge den Inhalt aus dem Div hinzu
         pdf.setFontSize(12)
-        pdf.text(content.innerText, 10, 20);*/
+        pdf.text(content.innerText, 10, 20);*!/
 
         pdf.save('packliste.pdf'); // Speichere das PDF mit dem angegebenen Namen
-    };
+    };*/
 
 
     return (
         <>
             <div className={"list"}>
-                <h1 style={{backgroundImage: "url(" + countryUrl + ")", opacity: 0.8, height: "2.3rem"}}></h1>
+                <h1 style={{backgroundImage: "url(" + countryUrl + ")", height: "2.4rem"}}></h1>
 
                 <div ref={divRef}>
                     {allItems.map(item =>
@@ -91,7 +90,7 @@ function List({data}: ListProps) {
 
             </div>
 
-            <button onClick={downloadContentAsPDF}>Packliste herunterladen</button>
+            {/*<button onClick={downloadContentAsPDF}>Packliste herunterladen</button>*/}
 
         </>
     )

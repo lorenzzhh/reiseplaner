@@ -75,3 +75,9 @@ label {
 input[type="checkbox"] {
     margin-right: 10px;
 }
+
+body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

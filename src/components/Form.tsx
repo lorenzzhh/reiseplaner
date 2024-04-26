@@ -326,10 +326,7 @@ function Form() {
         return (
             <>
 
-                <h1>Form</h1>
-
                 <form onSubmit={(event) => sendForm(event)}>
-
 
                     <label>Wähle dein Geschlecht:
                         <select name="gender" value={data.gender}
@@ -342,7 +339,6 @@ function Form() {
                             <option value="divers">Divers</option>
                         </select>
                     </label>
-
 
                     <label>Dein Hygienelevel
                         <input type={"range"} min={"1"} max={"5"} value={data.hygieneLevel}
