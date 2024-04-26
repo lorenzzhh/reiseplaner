@@ -65,9 +65,9 @@ function List({data}: ListProps) {
         pdf.setFontSize(16);
         pdf.text('Packliste', 10, 10);
 
-        // Füge den Inhalt aus dem Div hinzu
-        pdf.setFontSize(12);
-        pdf.text(content.innerText, 10, 20);
+       /* // Füge den Inhalt aus dem Div hinzu
+        pdf.setFontSize(12)
+        pdf.text(content.innerText, 10, 20);*/
 
         pdf.save('packliste.pdf'); // Speichere das PDF mit dem angegebenen Namen
     };
