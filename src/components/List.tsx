@@ -49,6 +49,9 @@ function List({data}: ListProps) {
 
 
         arrayBefore.push("Neccesaire/Hygieneartikel")
+        arrayBefore.push("Ladekabel")
+        arrayBefore.push("Jacke")
+        arrayBefore.push("Wasserflasche")
 
         setAllItems(arrayBefore)
     }
