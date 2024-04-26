@@ -3,4 +3,5 @@ export type FormData = {
     hygieneLevel: number
     countDays: number
     holydayType: string
+    countryCode: string
 }
