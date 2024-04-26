@@ -58,7 +58,7 @@ function List({data}: ListProps) {
     const divRef = useRef(null);
 
     const downloadContentAsPDF = () => {
-        const content = divRef.current;
+        /*const content = divRef.current;*/
         const pdf = new jsPDF();
 
         // Füge Titel hinzu
